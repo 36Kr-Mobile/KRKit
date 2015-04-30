@@ -74,27 +74,3 @@ typedef enum {
 - (void)kr_moveToCenterOfSuperview;
 
 @end
-
-/**************************************************************************************************
- 加载相关 Layout
- **************************************************************************************************/
-
-typedef NS_ENUM(NSUInteger, KRLoadingControlPosition) {
-    KRLoadingControlPositionCenter,
-    KRLoadingControlPositionLeft,
-    KRLoadingControlPositionRight,
-};
-
-@interface UIView (KRLoading)
-
-@property (strong, nonatomic) UIView *kr_coverView;
-@property (assign, nonatomic) BOOL kr_isLoading;
-@property (assign, nonatomic) BOOL kr_hidesContentWhenLoading;
-@property (assign, nonatomic) KRLoadingControlPosition kr_loadingPosition;
-@property (strong, nonatomic) UIActivityIndicatorView *kr_indicator;
-
-- (void)kr_loading;
-- (void)kr_stopLoading;
-- (void)kr_loadingWithActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)style;
-
-@end
