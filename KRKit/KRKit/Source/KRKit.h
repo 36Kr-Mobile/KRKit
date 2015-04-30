@@ -18,12 +18,11 @@ FOUNDATION_EXPORT const unsigned char KRKitVersionString[];
 #import "NSObject+KRKit.h"
 #import "NSArray+KRKit.h"
 #import "NSMutableArray+KRKit.h"
-#import "NSSet+KRKit.h"
-#import "NSMutableSet+KRKit.h"
 #import "NSDictionary+KRKit.h"
 #import "NSMutableDictionary+KRKit.h"
 #import "NSString+KRKit.h"
 #import "NSMutableString+KRKit.h"
+#import "NSAttributedString+KRKit.h"
 
 //UIKit Category
 #import "UIView+KRKit.h"

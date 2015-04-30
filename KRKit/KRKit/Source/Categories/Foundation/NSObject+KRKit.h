@@ -6,10 +6,11 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface NSObject (KRKit)
 
-+ (void)kr_test;
++ (BOOL)kr_swizzleMethod:(SEL)origSel withMethod:(SEL)altSel error:(NSError**)error;
++ (BOOL)kr_swizzleClassMethod:(SEL)origSel withClassMethod:(SEL)altSel error:(NSError**)error;
 
 @end

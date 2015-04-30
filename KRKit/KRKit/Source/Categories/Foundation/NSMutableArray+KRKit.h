@@ -6,8 +6,10 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface NSMutableArray (KRKit)
+
+- (void)kr_addObject:(id)anObject;
 
 @end
