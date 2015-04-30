@@ -14,7 +14,7 @@ KRKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "KRKit"
+pod "KRKit", :git => 'https://github.com/36Kr-Mobile/KRKit.git'
 ```
 
 ## Author
