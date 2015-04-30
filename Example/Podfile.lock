@@ -1,0 +1,14 @@
+PODS:
+  - KRKit (0.1.0)
+
+DEPENDENCIES:
+  - KRKit (from `../`)
+
+EXTERNAL SOURCES:
+  KRKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KRKit: 1b85cd2480d2ded71c5e77e2958746cf238952d7
+
+COCOAPODS: 0.36.4

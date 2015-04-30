@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'KRKit', :exclusive => true do
+  pod "KRKit", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "KRKit", :path => "../"
+
+  
+end
