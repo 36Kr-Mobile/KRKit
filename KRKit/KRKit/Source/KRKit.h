@@ -24,3 +24,8 @@ FOUNDATION_EXPORT const unsigned char KRKitVersionString[];
 #import "NSMutableString+KRKit.h"
 #import "NSAttributedString+KRKit.h"
 
+//UIKit Category
+#import "UIView+KRKit.h"
+#import "UIImage+KRKit.h"
+#import "UIImageView+KRKit.h"
+
