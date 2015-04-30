@@ -19,7 +19,7 @@
 {
     //缩小图片
     if (!image) {
-        image = [UIImage imageNamed:@"images-small-loader"];
+        return nil;
     }
     UIImage *sourceImage = image;
     UIImage *newImage = nil;

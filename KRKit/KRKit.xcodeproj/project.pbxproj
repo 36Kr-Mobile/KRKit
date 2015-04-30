@@ -13,7 +13,6 @@
 		21F56C371AF22B6700E47BD8 /* UIImageView+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F56C311AF22B6700E47BD8 /* UIImageView+KRKit.m */; };
 		21F56C381AF22B6700E47BD8 /* UIView+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F56C321AF22B6700E47BD8 /* UIView+KRKit.h */; };
 		21F56C391AF22B6700E47BD8 /* UIView+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F56C331AF22B6700E47BD8 /* UIView+KRKit.m */; };
-		21F56C3C1AF22B7800E47BD8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F56C3B1AF22B7800E47BD8 /* Images.xcassets */; };
 		BC79713C1AF1E3090073F077 /* KRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7971301AF1E3090073F077 /* KRKit.framework */; };
 		BC7971431AF1E3090073F077 /* KRKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7971421AF1E3090073F077 /* KRKitTests.m */; };
 		BC7971881AF2005A0073F077 /* NSArray+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7971751AF2005A0073F077 /* NSArray+KRKit.h */; };
@@ -54,7 +53,6 @@
 		21F56C311AF22B6700E47BD8 /* UIImageView+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KRKit.m"; sourceTree = "<group>"; };
 		21F56C321AF22B6700E47BD8 /* UIView+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KRKit.h"; sourceTree = "<group>"; };
 		21F56C331AF22B6700E47BD8 /* UIView+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KRKit.m"; sourceTree = "<group>"; };
-		21F56C3B1AF22B7800E47BD8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC7971301AF1E3090073F077 /* KRKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KRKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7971341AF1E3090073F077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC79713B1AF1E3090073F077 /* KRKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,14 +109,6 @@
 				21F56C331AF22B6700E47BD8 /* UIView+KRKit.m */,
 			);
 			path = UIKit;
-			sourceTree = "<group>";
-		};
-		21F56C3A1AF22B7800E47BD8 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				21F56C3B1AF22B7800E47BD8 /* Images.xcassets */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		BC7971261AF1E3080073F077 = {
@@ -178,7 +168,6 @@
 			children = (
 				BC7971871AF2005A0073F077 /* KRKit.h */,
 				BC7971731AF2005A0073F077 /* Categories */,
-				21F56C3A1AF22B7800E47BD8 /* Resource */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -327,7 +316,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21F56C3C1AF22B7800E47BD8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
