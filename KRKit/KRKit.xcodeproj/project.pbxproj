@@ -110,8 +110,7 @@
 				21F56C321AF22B6700E47BD8 /* UIView+KRKit.h */,
 				21F56C331AF22B6700E47BD8 /* UIView+KRKit.m */,
 			);
-			name = UIKit;
-			path = Categories/UIKit;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		21F56C3A1AF22B7800E47BD8 /* Resource */ = {
@@ -180,7 +179,6 @@
 				BC7971871AF2005A0073F077 /* KRKit.h */,
 				BC7971731AF2005A0073F077 /* Categories */,
 				21F56C3A1AF22B7800E47BD8 /* Resource */,
-				21F56C2D1AF22B6700E47BD8 /* UIKit */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -189,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7971741AF2005A0073F077 /* Foundation */,
-				BC7972021AF207EE0073F077 /* UIKit */,
+				21F56C2D1AF22B6700E47BD8 /* UIKit */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -217,13 +215,6 @@
 				BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		BC7972021AF207EE0073F077 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
