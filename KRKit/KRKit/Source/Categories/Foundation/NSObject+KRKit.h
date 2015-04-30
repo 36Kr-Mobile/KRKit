@@ -10,7 +10,7 @@
 
 @interface NSObject (KRKit)
 
-+ (BOOL)kr_swizzleMethod:(SEL)origSel withMethod:(SEL)altSel error:(NSError**)error;
-+ (BOOL)kr_swizzleClassMethod:(SEL)origSel withClassMethod:(SEL)altSel error:(NSError**)error;
++ (BOOL)kr_swizzleMethod:(SEL)origSel withMethod:(SEL)altSel;
++ (BOOL)kr_swizzleClassMethod:(SEL)origSel withClassMethod:(SEL)altSel;
 
 @end

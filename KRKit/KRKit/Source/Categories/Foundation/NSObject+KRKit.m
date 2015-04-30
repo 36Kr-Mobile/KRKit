@@ -8,33 +8,18 @@
 
 #import "NSObject+KRKit.h"
 #import <objc/runtime.h>
-#import <objc/message.h>
-
-#define SetNSErrorFor(FUNC, ERROR_VAR, FORMAT,...)	\
-if (ERROR_VAR) {	\
-NSString *errStr = [NSString stringWithFormat:@"%s: " FORMAT,FUNC,##__VA_ARGS__]; \
-*ERROR_VAR = [NSError errorWithDomain:@"NSCocoaErrorDomain" \
-code:-1	\
-userInfo:[NSDictionary dictionaryWithObject:errStr forKey:NSLocalizedDescriptionKey]]; \
-}
-
-#define SetNSError(ERROR_VAR, FORMAT,...) SetNSErrorFor(__func__, ERROR_VAR, FORMAT, ##__VA_ARGS__)
-
-#define GetClass(obj)	object_getClass(obj)
 
 @implementation NSObject (KRKit)
 
-+ (BOOL)kr_swizzleMethod:(SEL)origSel withMethod:(SEL)altSel error:(NSError**)error
++ (BOOL)kr_swizzleMethod:(SEL)origSel withMethod:(SEL)altSel
 {
     Method origMethod = class_getInstanceMethod(self, origSel);
     if (!origMethod) {
-        SetNSError(error, @"original method %@ not found for class %@", NSStringFromSelector(origSel), [self class]);
         return NO;
     }
     
     Method altMethod = class_getInstanceMethod(self, altSel);
     if (!altMethod) {
-        SetNSError(error, @"alternate method %@ not found for class %@", NSStringFromSelector(altSel), [self class]);
         return NO;
     }
     
@@ -51,9 +36,9 @@ userInfo:[NSDictionary dictionaryWithObject:errStr forKey:NSLocalizedDescription
     return YES;
 }
 
-+ (BOOL)kr_swizzleClassMethod:(SEL)origSel withClassMethod:(SEL)altSel error:(NSError**)error
++ (BOOL)kr_swizzleClassMethod:(SEL)origSel withClassMethod:(SEL)altSel
 {
-    return [GetClass((id)self) kr_swizzleMethod:origSel withMethod:altSel error:error];
+    return [object_getClass((id)self) kr_swizzleMethod:origSel withMethod:altSel];
 }
 
 @end
