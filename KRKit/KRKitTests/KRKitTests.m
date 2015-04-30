@@ -35,9 +35,26 @@
 
 - (void)testNSString
 {
-    NSString *str = @"Hello world!";
+    NSString *str = @"http://www.baidu.com";
     NSLog(@"%@",[str kr_md5]);
     XCTAssertNotNil([str kr_md5]);
+    NSLog(@"%@",[str kr_convertToURL]);
+    XCTAssertTrue([[str kr_convertToURL] isKindOfClass:[NSURL class]]);
+    NSString *email = @"hello@";
+    XCTAssertFalse([email kr_isEmail]);
+    email = @"hello@gmail.com";
+    XCTAssertTrue([email kr_isEmail]);
+    NSString *emptyStr = nil;
+    XCTAssertFalse([emptyStr kr_isNotEmpty]);
+    emptyStr = @"    ";
+    XCTAssertFalse([emptyStr kr_isNotEmpty]);
+    emptyStr = @"    akh   ";
+    XCTAssertTrue([emptyStr kr_isNotEmpty]);
+    NSString *originStr = @"alkjdlkajafldjkf";
+    NSString *base64 = [originStr kr_encodeBase64];
+    NSString *decode64 = [base64 kr_decodeBase64];
+    NSLog(@"%@ %@",base64, decode64);
+    XCTAssertTrue([originStr isEqualToString:decode64]);
 }
 
 @end

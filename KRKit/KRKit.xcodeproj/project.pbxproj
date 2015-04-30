@@ -17,17 +17,17 @@
 		BC79718D1AF2005A0073F077 /* NSMutableArray+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC79717A1AF2005A0073F077 /* NSMutableArray+KRKit.m */; };
 		BC79718E1AF2005A0073F077 /* NSMutableDictionary+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC79717B1AF2005A0073F077 /* NSMutableDictionary+KRKit.h */; };
 		BC79718F1AF2005A0073F077 /* NSMutableDictionary+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC79717C1AF2005A0073F077 /* NSMutableDictionary+KRKit.m */; };
-		BC7971901AF2005A0073F077 /* NSMutableSet+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC79717D1AF2005A0073F077 /* NSMutableSet+KRKit.h */; };
-		BC7971911AF2005A0073F077 /* NSMutableSet+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC79717E1AF2005A0073F077 /* NSMutableSet+KRKit.m */; };
 		BC7971921AF2005A0073F077 /* NSMutableString+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC79717F1AF2005A0073F077 /* NSMutableString+KRKit.h */; };
 		BC7971931AF2005A0073F077 /* NSMutableString+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7971801AF2005A0073F077 /* NSMutableString+KRKit.m */; };
 		BC7971941AF2005A0073F077 /* NSObject+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7971811AF2005A0073F077 /* NSObject+KRKit.h */; };
 		BC7971951AF2005A0073F077 /* NSObject+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7971821AF2005A0073F077 /* NSObject+KRKit.m */; };
-		BC7971961AF2005A0073F077 /* NSSet+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7971831AF2005A0073F077 /* NSSet+KRKit.h */; };
-		BC7971971AF2005A0073F077 /* NSSet+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7971841AF2005A0073F077 /* NSSet+KRKit.m */; };
 		BC7971981AF2005A0073F077 /* NSString+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7971851AF2005A0073F077 /* NSString+KRKit.h */; };
 		BC7971991AF2005A0073F077 /* NSString+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7971861AF2005A0073F077 /* NSString+KRKit.m */; };
 		BC79719A1AF2005A0073F077 /* KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7971871AF2005A0073F077 /* KRKit.h */; };
+		BC7972051AF21FF10073F077 /* NSAttributedString+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7972031AF21FF10073F077 /* NSAttributedString+KRKit.h */; };
+		BC7972061AF21FF10073F077 /* NSAttributedString+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7972041AF21FF10073F077 /* NSAttributedString+KRKit.m */; };
+		BC7972091AF220630073F077 /* NSMutableAttributedString+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7972071AF220630073F077 /* NSMutableAttributedString+KRKit.h */; };
+		BC79720A1AF220630073F077 /* NSMutableAttributedString+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,17 +54,17 @@
 		BC79717A1AF2005A0073F077 /* NSMutableArray+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+KRKit.m"; sourceTree = "<group>"; };
 		BC79717B1AF2005A0073F077 /* NSMutableDictionary+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+KRKit.h"; sourceTree = "<group>"; };
 		BC79717C1AF2005A0073F077 /* NSMutableDictionary+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+KRKit.m"; sourceTree = "<group>"; };
-		BC79717D1AF2005A0073F077 /* NSMutableSet+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+KRKit.h"; sourceTree = "<group>"; };
-		BC79717E1AF2005A0073F077 /* NSMutableSet+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+KRKit.m"; sourceTree = "<group>"; };
 		BC79717F1AF2005A0073F077 /* NSMutableString+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+KRKit.h"; sourceTree = "<group>"; };
 		BC7971801AF2005A0073F077 /* NSMutableString+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+KRKit.m"; sourceTree = "<group>"; };
 		BC7971811AF2005A0073F077 /* NSObject+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KRKit.h"; sourceTree = "<group>"; };
 		BC7971821AF2005A0073F077 /* NSObject+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KRKit.m"; sourceTree = "<group>"; };
-		BC7971831AF2005A0073F077 /* NSSet+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+KRKit.h"; sourceTree = "<group>"; };
-		BC7971841AF2005A0073F077 /* NSSet+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+KRKit.m"; sourceTree = "<group>"; };
 		BC7971851AF2005A0073F077 /* NSString+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KRKit.h"; sourceTree = "<group>"; };
 		BC7971861AF2005A0073F077 /* NSString+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KRKit.m"; sourceTree = "<group>"; };
 		BC7971871AF2005A0073F077 /* KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRKit.h; sourceTree = "<group>"; };
+		BC7972031AF21FF10073F077 /* NSAttributedString+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+KRKit.h"; sourceTree = "<group>"; };
+		BC7972041AF21FF10073F077 /* NSAttributedString+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+KRKit.m"; sourceTree = "<group>"; };
+		BC7972071AF220630073F077 /* NSMutableAttributedString+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+KRKit.h"; sourceTree = "<group>"; };
+		BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+KRKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,16 +167,16 @@
 				BC79717A1AF2005A0073F077 /* NSMutableArray+KRKit.m */,
 				BC79717B1AF2005A0073F077 /* NSMutableDictionary+KRKit.h */,
 				BC79717C1AF2005A0073F077 /* NSMutableDictionary+KRKit.m */,
-				BC79717D1AF2005A0073F077 /* NSMutableSet+KRKit.h */,
-				BC79717E1AF2005A0073F077 /* NSMutableSet+KRKit.m */,
 				BC79717F1AF2005A0073F077 /* NSMutableString+KRKit.h */,
 				BC7971801AF2005A0073F077 /* NSMutableString+KRKit.m */,
 				BC7971811AF2005A0073F077 /* NSObject+KRKit.h */,
 				BC7971821AF2005A0073F077 /* NSObject+KRKit.m */,
-				BC7971831AF2005A0073F077 /* NSSet+KRKit.h */,
-				BC7971841AF2005A0073F077 /* NSSet+KRKit.m */,
 				BC7971851AF2005A0073F077 /* NSString+KRKit.h */,
 				BC7971861AF2005A0073F077 /* NSString+KRKit.m */,
+				BC7972031AF21FF10073F077 /* NSAttributedString+KRKit.h */,
+				BC7972041AF21FF10073F077 /* NSAttributedString+KRKit.m */,
+				BC7972071AF220630073F077 /* NSMutableAttributedString+KRKit.h */,
+				BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -195,14 +195,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7971961AF2005A0073F077 /* NSSet+KRKit.h in Headers */,
-				BC7971901AF2005A0073F077 /* NSMutableSet+KRKit.h in Headers */,
 				BC7971921AF2005A0073F077 /* NSMutableString+KRKit.h in Headers */,
+				BC7972051AF21FF10073F077 /* NSAttributedString+KRKit.h in Headers */,
 				BC7971881AF2005A0073F077 /* NSArray+KRKit.h in Headers */,
 				BC79718C1AF2005A0073F077 /* NSMutableArray+KRKit.h in Headers */,
 				BC79718E1AF2005A0073F077 /* NSMutableDictionary+KRKit.h in Headers */,
 				BC79719A1AF2005A0073F077 /* KRKit.h in Headers */,
 				BC7971941AF2005A0073F077 /* NSObject+KRKit.h in Headers */,
+				BC7972091AF220630073F077 /* NSMutableAttributedString+KRKit.h in Headers */,
 				BC79718A1AF2005A0073F077 /* NSDictionary+KRKit.h in Headers */,
 				BC7971981AF2005A0073F077 /* NSString+KRKit.h in Headers */,
 			);
@@ -312,13 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7971911AF2005A0073F077 /* NSMutableSet+KRKit.m in Sources */,
 				BC79718B1AF2005A0073F077 /* NSDictionary+KRKit.m in Sources */,
 				BC7971891AF2005A0073F077 /* NSArray+KRKit.m in Sources */,
 				BC7971991AF2005A0073F077 /* NSString+KRKit.m in Sources */,
 				BC79718D1AF2005A0073F077 /* NSMutableArray+KRKit.m in Sources */,
 				BC7971931AF2005A0073F077 /* NSMutableString+KRKit.m in Sources */,
-				BC7971971AF2005A0073F077 /* NSSet+KRKit.m in Sources */,
+				BC79720A1AF220630073F077 /* NSMutableAttributedString+KRKit.m in Sources */,
+				BC7972061AF21FF10073F077 /* NSAttributedString+KRKit.m in Sources */,
 				BC79718F1AF2005A0073F077 /* NSMutableDictionary+KRKit.m in Sources */,
 				BC7971951AF2005A0073F077 /* NSObject+KRKit.m in Sources */,
 			);

@@ -6,8 +6,10 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface NSMutableDictionary (KRKit)
+
+- (void)kr_setObject:(id)anObject forKey:(id<NSCopying>)aKey;
 
 @end

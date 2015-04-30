@@ -6,8 +6,11 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface NSDictionary (KRKit)
+
+- (BOOL)kr_containsObjectForKey:(id)key;
+- (BOOL)kr_isEmpty;
 
 @end

@@ -10,4 +10,11 @@
 
 @implementation NSMutableArray (KRKit)
 
+- (void)kr_addObject:(id)anObject
+{
+    if (anObject) {
+        [self addObject:anObject];
+    }
+}
+
 @end
