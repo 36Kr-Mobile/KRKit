@@ -90,4 +90,14 @@
     return ![emptyStr isEqualToString:@""];
 }
 
+- (CGFloat)kr_heightWithMaxWidth:(CGFloat)width attributes:(NSDictionary *)attributes
+{
+    NSParameterAssert(attributes);
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
+                                     options:(NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading)
+                                  attributes:attributes context:nil];
+    CGRectIntegral(rect);
+    return rect.size.height;
+}
+
 @end

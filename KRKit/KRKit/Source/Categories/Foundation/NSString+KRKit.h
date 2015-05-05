@@ -7,6 +7,7 @@
 //
 
 @import Foundation;
+@import UIKit;
 
 @interface NSString (KRKit)
 
@@ -21,5 +22,7 @@
 - (BOOL)kr_isEmail;
 - (BOOL)kr_hasString:(NSString *)substring;
 - (BOOL)kr_isNotEmpty;
+
+- (CGFloat)kr_heightWithMaxWidth:(CGFloat)width attributes:(NSDictionary *)attributes;
 
 @end
