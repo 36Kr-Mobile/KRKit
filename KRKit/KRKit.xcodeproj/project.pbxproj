@@ -13,6 +13,8 @@
 		21F56C371AF22B6700E47BD8 /* UIImageView+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F56C311AF22B6700E47BD8 /* UIImageView+KRKit.m */; };
 		21F56C381AF22B6700E47BD8 /* UIView+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F56C321AF22B6700E47BD8 /* UIView+KRKit.h */; };
 		21F56C391AF22B6700E47BD8 /* UIView+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F56C331AF22B6700E47BD8 /* UIView+KRKit.m */; };
+		BC6CBF871AF8C9C900BC45C5 /* UIColor+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6CBF851AF8C9C900BC45C5 /* UIColor+KRKit.h */; };
+		BC6CBF881AF8C9C900BC45C5 /* UIColor+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6CBF861AF8C9C900BC45C5 /* UIColor+KRKit.m */; };
 		BC79713C1AF1E3090073F077 /* KRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7971301AF1E3090073F077 /* KRKit.framework */; };
 		BC7971431AF1E3090073F077 /* KRKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7971421AF1E3090073F077 /* KRKitTests.m */; };
 		BC7971881AF2005A0073F077 /* NSArray+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7971751AF2005A0073F077 /* NSArray+KRKit.h */; };
@@ -53,6 +55,8 @@
 		21F56C311AF22B6700E47BD8 /* UIImageView+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KRKit.m"; sourceTree = "<group>"; };
 		21F56C321AF22B6700E47BD8 /* UIView+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KRKit.h"; sourceTree = "<group>"; };
 		21F56C331AF22B6700E47BD8 /* UIView+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KRKit.m"; sourceTree = "<group>"; };
+		BC6CBF851AF8C9C900BC45C5 /* UIColor+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KRKit.h"; sourceTree = "<group>"; };
+		BC6CBF861AF8C9C900BC45C5 /* UIColor+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KRKit.m"; sourceTree = "<group>"; };
 		BC7971301AF1E3090073F077 /* KRKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KRKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7971341AF1E3090073F077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC79713B1AF1E3090073F077 /* KRKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +111,8 @@
 				21F56C311AF22B6700E47BD8 /* UIImageView+KRKit.m */,
 				21F56C321AF22B6700E47BD8 /* UIView+KRKit.h */,
 				21F56C331AF22B6700E47BD8 /* UIView+KRKit.m */,
+				BC6CBF851AF8C9C900BC45C5 /* UIColor+KRKit.h */,
+				BC6CBF861AF8C9C900BC45C5 /* UIColor+KRKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 				BC79718C1AF2005A0073F077 /* NSMutableArray+KRKit.h in Headers */,
 				BC79718E1AF2005A0073F077 /* NSMutableDictionary+KRKit.h in Headers */,
 				21F56C361AF22B6700E47BD8 /* UIImageView+KRKit.h in Headers */,
+				BC6CBF871AF8C9C900BC45C5 /* UIColor+KRKit.h in Headers */,
 				21F56C381AF22B6700E47BD8 /* UIView+KRKit.h in Headers */,
 				BC79719A1AF2005A0073F077 /* KRKit.h in Headers */,
 				BC7971941AF2005A0073F077 /* NSObject+KRKit.h in Headers */,
@@ -336,6 +343,7 @@
 				BC79718B1AF2005A0073F077 /* NSDictionary+KRKit.m in Sources */,
 				BC7971891AF2005A0073F077 /* NSArray+KRKit.m in Sources */,
 				BC7971991AF2005A0073F077 /* NSString+KRKit.m in Sources */,
+				BC6CBF881AF8C9C900BC45C5 /* UIColor+KRKit.m in Sources */,
 				BC79718D1AF2005A0073F077 /* NSMutableArray+KRKit.m in Sources */,
 				BC7971931AF2005A0073F077 /* NSMutableString+KRKit.m in Sources */,
 				BC79720A1AF220630073F077 /* NSMutableAttributedString+KRKit.m in Sources */,
