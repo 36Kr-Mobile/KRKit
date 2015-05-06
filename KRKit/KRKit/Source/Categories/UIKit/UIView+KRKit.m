@@ -8,6 +8,7 @@
 
 #import "UIView+KRKit.h"
 #import <objc/runtime.h>
+@import QuartzCore;
 
 @implementation UIView (KRSize)
 
