@@ -268,3 +268,21 @@ static char kWhenTouchedUpBlockKey;
 }
 
 @end
+
+@implementation UIView (Debug)
+
+- (void)kr_markBorderWithRandomColor
+{
+    self.layer.borderColor = [UIColor colorWithRed:(arc4random() % 255 )/ 255.f green:(arc4random() % 255 )/ 255.f blue:(arc4random() % 255 )/ 255.f alpha:1].CGColor;
+    self.layer.borderWidth = 1.0f;
+}
+
+- (void)kr_markBorderWithRandomColorRecursive
+{
+    [self kr_markBorderWithRandomColor];
+    for (UIView *v in self.subviews) {
+        [v kr_markBorderWithRandomColorRecursive];
+    }
+}
+
+@end

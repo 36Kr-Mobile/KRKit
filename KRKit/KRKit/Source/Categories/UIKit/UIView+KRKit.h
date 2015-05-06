@@ -74,3 +74,10 @@ typedef enum {
 - (void)kr_moveToCenterOfSuperview;
 
 @end
+
+@interface UIView (Debug)
+
+- (void)kr_markBorderWithRandomColor;
+- (void)kr_markBorderWithRandomColorRecursive;
+
+@end
