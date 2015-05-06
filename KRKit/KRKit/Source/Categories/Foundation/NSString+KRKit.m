@@ -96,7 +96,7 @@
     CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
                                      options:(NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading)
                                   attributes:attributes context:nil];
-    CGRectIntegral(rect);
+    rect = CGRectIntegral(rect);
     return rect.size.height;
 }
 
