@@ -40,4 +40,30 @@
     return newImage;
 }
 
++ (UIImage *)kr_circularImage:(UIImage *)image withRadius:(CGFloat)radius withDiamter:(NSUInteger)diameter
+{
+    if (!image) {
+        return nil;
+    }
+    CGRect frame = CGRectMake(0.0f, 0.0f, diameter, diameter);
+    UIImage *newImage = nil;
+    
+    UIGraphicsBeginImageContextWithOptions(frame.size, NO, [UIScreen mainScreen].scale);
+    {
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        CGContextSaveGState(context);
+        
+        UIBezierPath *imgPath = [UIBezierPath bezierPathWithRoundedRect:frame cornerRadius:radius];
+        [imgPath addClip];
+        [image drawInRect:frame];
+        
+        newImage = UIGraphicsGetImageFromCurrentImageContext();
+        
+        CGContextRestoreGState(context);
+    }
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
 @end

@@ -17,4 +17,6 @@
  */
 + (UIImage *)kr_scaleImage:(UIImage *)image asThubmnailWithHeight:(CGFloat)thumbnailHeight;
 
++ (UIImage *)kr_circularImage:(UIImage *)image withRadius:(CGFloat)radius withDiamter:(NSUInteger)diameter;
+
 @end
