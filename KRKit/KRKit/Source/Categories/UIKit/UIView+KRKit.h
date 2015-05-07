@@ -9,10 +9,10 @@
 @import UIKit;
 
 /**************************************************************************************************
- Frame相关
+ Layout相关
  **************************************************************************************************/
 
-@interface UIView (KRSize)
+@interface UIView (KRLayout)
 
 @property (nonatomic) CGFloat left;
 
@@ -36,6 +36,20 @@
 
 @property (nonatomic) CGFloat cornerRadius;
 
+@property (nonatomic) UIView *topSuperView;
+
+- (void)kr_widthEqualToView:(UIView *)view;
+- (void)kr_heightEqualToView:(UIView *)view;
+- (void)kr_sizeEqualToView:(UIView *)view;
+- (void)kr_centerXEqualToView:(UIView *)view;
+- (void)kr_centerYEqualToView:(UIView *)view;
+- (void)kr_top:(CGFloat)top fromView:(UIView *)view;
+- (void)kr_bottom:(CGFloat)bottom fromView:(UIView *)view;
+- (void)kr_left:(CGFloat)left fromView:(UIView *)view;
+- (void)kr_right:(CGFloat)right fromView:(UIView *)view;
+- (void)kr_fillWidth;
+- (void)kr_fillHeight;
+- (void)kr_fill;
 - (void)kr_removeAllSubviews;
 
 @end
@@ -49,29 +63,6 @@
 - (void)kr_whenTapped:(void(^)(void))block;
 - (void)kr_whenTouchedDown:(void(^)(void))block;
 - (void)kr_whenTouchedUp:(void(^)(void))block;
-
-@end
-
-/**************************************************************************************************
- 布局相关 Layout
- **************************************************************************************************/
-
-typedef enum {
-    KRViewAlignmentUnchanged,
-    KRViewAlignmentLeftAligned,
-    KRViewAlignmentRightAligned,
-    KRViewAlignmentCenter
-} KRViewAlignment;
-
-@interface UIView (KRPosition)
-
-- (void)kr_positionUnderView:(UIView *)view;
-- (void)kr_positionUnderView:(UIView *)view padding:(CGFloat)padding;
-- (void)kr_positionUnderView:(UIView *)view alignment:(KRViewAlignment)alignment;
-- (void)kr_positionUnderView:(UIView *)view padding:(CGFloat)padding alignment:(KRViewAlignment)alignment;
-
-- (void)kr_addCenteredSubview:(UIView *)subview;
-- (void)kr_moveToCenterOfSuperview;
 
 @end
 

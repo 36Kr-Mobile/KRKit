@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 @import QuartzCore;
 
-@implementation UIView (KRSize)
+@implementation UIView (KRLayout)
 
 - (CGFloat)left
 {
@@ -131,11 +131,114 @@
 - (void)setCornerRadius:(CGFloat)cornerRadius
 {
     self.layer.cornerRadius = cornerRadius;
+    self.layer.masksToBounds = YES;
 }
 
 - (CGFloat)cornerRadius
 {
     return self.layer.cornerRadius;
+}
+
+- (UIView *)topSuperView
+{
+    UIView *topSuperView = self.superview;
+    
+    if (topSuperView == nil) {
+        topSuperView = self;
+    } else {
+        while (topSuperView.superview) {
+            topSuperView = topSuperView.superview;
+        }
+    }
+    
+    return topSuperView;
+}
+
+- (void)setTopSuperView:(UIView *)topSuperView
+{
+    
+}
+
+- (void)kr_widthEqualToView:(UIView *)view
+{
+    self.width = view.width;
+}
+
+- (void)kr_heightEqualToView:(UIView *)view
+{
+    self.height = view.height;
+}
+
+- (void)kr_sizeEqualToView:(UIView *)view
+{
+    self.size = view.size;
+}
+
+- (void)kr_centerXEqualToView:(UIView *)view
+{
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewCenterPoint = [superView convertPoint:view.center toView:self.topSuperView];
+    CGPoint centerPoint = [self.topSuperView convertPoint:viewCenterPoint toView:self.superview];
+    self.centerX = centerPoint.x;
+}
+
+- (void)kr_centerYEqualToView:(UIView *)view
+{
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewCenterPoint = [superView convertPoint:view.center toView:self.topSuperView];
+    CGPoint centerPoint = [self.topSuperView convertPoint:viewCenterPoint toView:self.superview];
+    self.centerY = centerPoint.y;
+}
+
+- (void)kr_top:(CGFloat)top fromView:(UIView *)view
+{
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.origin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.top = newOrigin.y + top + view.height;
+}
+
+- (void)kr_bottom:(CGFloat)bottom fromView:(UIView *)view
+{
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.origin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.top = newOrigin.y - bottom - self.height;
+}
+
+- (void)kr_left:(CGFloat)left fromView:(UIView *)view
+{
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.origin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.left = newOrigin.x - left - self.width;
+}
+
+- (void)kr_right:(CGFloat)right fromView:(UIView *)view
+{
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.origin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.left = newOrigin.x + right + view.width;
+}
+
+- (void)kr_fillWidth
+{
+    self.frame = CGRectMake(0, self.top, self.superview.width, self.height);
+}
+
+- (void)kr_fillHeight
+{
+    self.frame = CGRectMake(self.left, 0, self.width, self.superview.height);
+}
+
+- (void)kr_fill
+{
+    self.frame = CGRectMake(0, 0, self.superview.width, self.superview.height);
 }
 
 - (void)kr_removeAllSubviews
@@ -211,61 +314,6 @@ static char kWhenTouchedUpBlockKey;
 {
     [super touchesBegan:touches withEvent:event];
     [self runBlockForKey:&kWhenTouchedUpBlockKey];
-}
-
-@end
-
-@implementation UIView (KRPosition)
-
-- (void)kr_positionUnderView:(UIView *)view
-{
-    [self kr_positionUnderView:view padding:0];
-}
-
-- (void)kr_positionUnderView:(UIView *)view padding:(CGFloat)padding
-{
-    [self kr_positionUnderView:view padding:padding alignment:KRViewAlignmentCenter];
-}
-
-- (void)kr_positionUnderView:(UIView *)view alignment:(KRViewAlignment)alignment
-{
-    [self kr_positionUnderView:view padding:0 alignment:alignment];
-}
-
-- (void)kr_positionUnderView:(UIView *)view padding:(CGFloat)padding alignment:(KRViewAlignment)alignment
-{
-    self.top = view.bottom + padding;
-
-    switch (alignment) {
-        case KRViewAlignmentUnchanged:
-            // do nothing
-            break;
-        case KRViewAlignmentLeftAligned:
-            self.left = view.left;
-            break;
-
-        case KRViewAlignmentRightAligned:
-            self.right = view.right;
-            break;
-
-        case KRViewAlignmentCenter:
-            self.centerX = view.centerX;
-            break;
-    }
-}
-
-- (void)kr_addCenteredSubview:(UIView *)subview
-{
-    subview.left = (CGFloat)((self.bounds.size.width - subview.width) / 2);
-    subview.top = (CGFloat)((self.bounds.size.height - subview.width) / 2);
-
-    [self addSubview:subview];
-}
-
-- (void)kr_moveToCenterOfSuperview
-{
-    self.left = (CGFloat)((self.superview.bounds.size.width - self.width) / 2);
-    self.top = (CGFloat)((self.superview.bounds.size.height - self.height) / 2);
 }
 
 @end

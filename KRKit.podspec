@@ -41,4 +41,8 @@ Pod::Spec.new do |s|
 
   end
 
+  s.subspec 'Macro' do |ss|
+    ss.source_files = 'KRKit/KRKit/Source/Macro/*.{h,m}'
+  end
+
 end

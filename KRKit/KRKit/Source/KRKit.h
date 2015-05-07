@@ -15,6 +15,8 @@ FOUNDATION_EXPORT double KRKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char KRKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <KRKit/PublicHeader.h>
+#import "KRMacro.h"
+
 #import "NSObject+KRKit.h"
 #import "NSArray+KRKit.h"
 #import "NSMutableArray+KRKit.h"

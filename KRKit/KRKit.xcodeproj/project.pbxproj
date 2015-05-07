@@ -36,6 +36,7 @@
 		BC7972061AF21FF10073F077 /* NSAttributedString+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7972041AF21FF10073F077 /* NSAttributedString+KRKit.m */; };
 		BC7972091AF220630073F077 /* NSMutableAttributedString+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7972071AF220630073F077 /* NSMutableAttributedString+KRKit.h */; };
 		BC79720A1AF220630073F077 /* NSMutableAttributedString+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */; };
+		BCC159311AFB518A0084AC72 /* KRMacro.h in Sources */ = {isa = PBXBuildFile; fileRef = BCC159301AFB518A0084AC72 /* KRMacro.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		BC7972041AF21FF10073F077 /* NSAttributedString+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+KRKit.m"; sourceTree = "<group>"; };
 		BC7972071AF220630073F077 /* NSMutableAttributedString+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+KRKit.h"; sourceTree = "<group>"; };
 		BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+KRKit.m"; sourceTree = "<group>"; };
+		BCC159301AFB518A0084AC72 /* KRMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7971871AF2005A0073F077 /* KRKit.h */,
+				BCC1592F1AFB51240084AC72 /* Macro */,
 				BC7971731AF2005A0073F077 /* Categories */,
 			);
 			path = Source;
@@ -210,6 +213,14 @@
 				BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		BCC1592F1AFB51240084AC72 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				BCC159301AFB518A0084AC72 /* KRMacro.h */,
+			);
+			path = Macro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +354,7 @@
 				BC79718B1AF2005A0073F077 /* NSDictionary+KRKit.m in Sources */,
 				BC7971891AF2005A0073F077 /* NSArray+KRKit.m in Sources */,
 				BC7971991AF2005A0073F077 /* NSString+KRKit.m in Sources */,
+				BCC159311AFB518A0084AC72 /* KRMacro.h in Sources */,
 				BC6CBF881AF8C9C900BC45C5 /* UIColor+KRKit.m in Sources */,
 				BC79718D1AF2005A0073F077 /* NSMutableArray+KRKit.m in Sources */,
 				BC7971931AF2005A0073F077 /* NSMutableString+KRKit.m in Sources */,
