@@ -15,6 +15,8 @@
 #define KRStatusBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height)
 #define KROnePixelHeight (1.0/[[UIScreen mainScreen] scale])
 #define KRScreenScale  ([[UIScreen mainScreen] scale])
+#define KRNavigationBarHeight   44.0
+#define KRTabBarHeight  49.0
 
 /**
  *  Device相关
