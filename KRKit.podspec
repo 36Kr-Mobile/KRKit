@@ -45,4 +45,8 @@ Pod::Spec.new do |s|
     ss.source_files = 'KRKit/KRKit/Source/Macro/*.{h,m}'
   end
 
+  s.subspec 'UI Component' do |ss|
+    ss.source_files = 'KRKit/KRKit/Source/UI Component/*.{h,m}'
+  end
+
 end

@@ -37,6 +37,8 @@
 		BC7972091AF220630073F077 /* NSMutableAttributedString+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7972071AF220630073F077 /* NSMutableAttributedString+KRKit.h */; };
 		BC79720A1AF220630073F077 /* NSMutableAttributedString+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */; };
 		BCC159311AFB518A0084AC72 /* KRMacro.h in Sources */ = {isa = PBXBuildFile; fileRef = BCC159301AFB518A0084AC72 /* KRMacro.h */; };
+		BCCF014C1AFE2D3800941B4E /* KRImageLabelView.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCF014A1AFE2D3800941B4E /* KRImageLabelView.h */; };
+		BCCF014D1AFE2D3800941B4E /* KRImageLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCF014B1AFE2D3800941B4E /* KRImageLabelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		BC7972071AF220630073F077 /* NSMutableAttributedString+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+KRKit.h"; sourceTree = "<group>"; };
 		BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+KRKit.m"; sourceTree = "<group>"; };
 		BCC159301AFB518A0084AC72 /* KRMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRMacro.h; sourceTree = "<group>"; };
+		BCCF014A1AFE2D3800941B4E /* KRImageLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRImageLabelView.h; sourceTree = "<group>"; };
+		BCCF014B1AFE2D3800941B4E /* KRImageLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRImageLabelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7971871AF2005A0073F077 /* KRKit.h */,
+				BCCF01491AFE2CFF00941B4E /* UI Component */,
 				BCC1592F1AFB51240084AC72 /* Macro */,
 				BC7971731AF2005A0073F077 /* Categories */,
 			);
@@ -223,6 +228,15 @@
 			path = Macro;
 			sourceTree = "<group>";
 		};
+		BCCF01491AFE2CFF00941B4E /* UI Component */ = {
+			isa = PBXGroup;
+			children = (
+				BCCF014A1AFE2D3800941B4E /* KRImageLabelView.h */,
+				BCCF014B1AFE2D3800941B4E /* KRImageLabelView.m */,
+			);
+			path = "UI Component";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -239,6 +253,7 @@
 				BC6CBF871AF8C9C900BC45C5 /* UIColor+KRKit.h in Headers */,
 				21F56C381AF22B6700E47BD8 /* UIView+KRKit.h in Headers */,
 				BC79719A1AF2005A0073F077 /* KRKit.h in Headers */,
+				BCCF014C1AFE2D3800941B4E /* KRImageLabelView.h in Headers */,
 				BC7971941AF2005A0073F077 /* NSObject+KRKit.h in Headers */,
 				BC7972091AF220630073F077 /* NSMutableAttributedString+KRKit.h in Headers */,
 				BC79718A1AF2005A0073F077 /* NSDictionary+KRKit.h in Headers */,
@@ -355,6 +370,7 @@
 				BC7971891AF2005A0073F077 /* NSArray+KRKit.m in Sources */,
 				BC7971991AF2005A0073F077 /* NSString+KRKit.m in Sources */,
 				BCC159311AFB518A0084AC72 /* KRMacro.h in Sources */,
+				BCCF014D1AFE2D3800941B4E /* KRImageLabelView.m in Sources */,
 				BC6CBF881AF8C9C900BC45C5 /* UIColor+KRKit.m in Sources */,
 				BC79718D1AF2005A0073F077 /* NSMutableArray+KRKit.m in Sources */,
 				BC7971931AF2005A0073F077 /* NSMutableString+KRKit.m in Sources */,
