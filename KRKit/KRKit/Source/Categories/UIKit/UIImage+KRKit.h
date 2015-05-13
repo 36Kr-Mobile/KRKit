@@ -19,4 +19,6 @@
 
 + (UIImage *)kr_circularImage:(UIImage *)image withRadius:(CGFloat)radius withDiamter:(NSUInteger)diameter;
 
++ (UIImage *)kr_imageWithColor:(UIColor *)color;
+
 @end
