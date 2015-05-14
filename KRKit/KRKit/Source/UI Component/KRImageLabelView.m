@@ -121,6 +121,7 @@
     if (_imagePosition != imagePosition) {
         _imagePosition = imagePosition;
         [self setNeedsLayout];
+        [self layoutIfNeeded];
     }
 }
 
@@ -128,7 +129,9 @@
 {
     if (_font != font) {
         _font = font;
+        self.label.font = font;
         [self setNeedsLayout];
+        [self layoutIfNeeded];
     }
 }
 
@@ -137,6 +140,7 @@
     if (_elementInset != elementInset) {
         _elementInset = elementInset;
         [self setNeedsLayout];
+        [self layoutIfNeeded];
     }
 }
 
@@ -155,6 +159,7 @@
         _icon = icon;
         self.imageView.image = _icon;
         [self setNeedsLayout];
+        [self layoutIfNeeded];
     }
 }
 
@@ -164,6 +169,7 @@
         _text = text;
         self.label.text = text;
         [self setNeedsLayout];
+        [self layoutIfNeeded];
     }
 }
 
