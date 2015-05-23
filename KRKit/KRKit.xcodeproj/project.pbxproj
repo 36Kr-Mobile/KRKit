@@ -36,6 +36,16 @@
 		BC7972061AF21FF10073F077 /* NSAttributedString+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7972041AF21FF10073F077 /* NSAttributedString+KRKit.m */; };
 		BC7972091AF220630073F077 /* NSMutableAttributedString+KRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7972071AF220630073F077 /* NSMutableAttributedString+KRKit.h */; };
 		BC79720A1AF220630073F077 /* NSMutableAttributedString+KRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */; };
+		BCA862361B10150F00BD22DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA862351B10150F00BD22DA /* main.m */; };
+		BCA862391B10150F00BD22DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA862381B10150F00BD22DA /* AppDelegate.m */; };
+		BCA8623C1B10150F00BD22DA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA8623B1B10150F00BD22DA /* FirstViewController.m */; };
+		BCA8623F1B10150F00BD22DA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA8623E1B10150F00BD22DA /* SecondViewController.m */; };
+		BCA862421B10150F00BD22DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA862401B10150F00BD22DA /* Main.storyboard */; };
+		BCA862441B10150F00BD22DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA862431B10150F00BD22DA /* Images.xcassets */; };
+		BCA862471B10150F00BD22DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA862451B10150F00BD22DA /* LaunchScreen.xib */; };
+		BCA862531B10150F00BD22DA /* KRKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA862521B10150F00BD22DA /* KRKitDemoTests.m */; };
+		BCA8625E1B10186300BD22DA /* KRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7971301AF1E3090073F077 /* KRKit.framework */; };
+		BCA862621B10187C00BD22DA /* KRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC7971301AF1E3090073F077 /* KRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BCC159311AFB518A0084AC72 /* KRMacro.h in Sources */ = {isa = PBXBuildFile; fileRef = BCC159301AFB518A0084AC72 /* KRMacro.h */; };
 		BCCF014C1AFE2D3800941B4E /* KRImageLabelView.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCF014A1AFE2D3800941B4E /* KRImageLabelView.h */; };
 		BCCF014D1AFE2D3800941B4E /* KRImageLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCF014B1AFE2D3800941B4E /* KRImageLabelView.m */; };
@@ -49,7 +59,35 @@
 			remoteGlobalIDString = BC79712F1AF1E3090073F077;
 			remoteInfo = KRKit;
 		};
+		BCA8624D1B10150F00BD22DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC7971271AF1E3080073F077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA862301B10150F00BD22DA;
+			remoteInfo = KRKitDemo;
+		};
+		BCA8625F1B10186600BD22DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC7971271AF1E3080073F077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC79712F1AF1E3090073F077;
+			remoteInfo = KRKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCA862631B10187C00BD22DA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BCA862621B10187C00BD22DA /* KRKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		21F56C2E1AF22B6700E47BD8 /* UIImage+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KRKit.h"; sourceTree = "<group>"; };
@@ -84,6 +122,22 @@
 		BC7972041AF21FF10073F077 /* NSAttributedString+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+KRKit.m"; sourceTree = "<group>"; };
 		BC7972071AF220630073F077 /* NSMutableAttributedString+KRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+KRKit.h"; sourceTree = "<group>"; };
 		BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+KRKit.m"; sourceTree = "<group>"; };
+		BCA862311B10150F00BD22DA /* KRKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA862341B10150F00BD22DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA862351B10150F00BD22DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCA862371B10150F00BD22DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCA862381B10150F00BD22DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCA8623A1B10150F00BD22DA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BCA8623B1B10150F00BD22DA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BCA8623D1B10150F00BD22DA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BCA8623E1B10150F00BD22DA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BCA862411B10150F00BD22DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCA862431B10150F00BD22DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCA862461B10150F00BD22DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BCA8624C1B10150F00BD22DA /* KRKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA862511B10150F00BD22DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA862521B10150F00BD22DA /* KRKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRKitDemoTests.m; sourceTree = "<group>"; };
+		BCA8625A1B1015A900BD22DA /* KRKitDemo-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KRKitDemo-prefix.pch"; sourceTree = "<group>"; };
 		BCC159301AFB518A0084AC72 /* KRMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRMacro.h; sourceTree = "<group>"; };
 		BCCF014A1AFE2D3800941B4E /* KRImageLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRImageLabelView.h; sourceTree = "<group>"; };
 		BCCF014B1AFE2D3800941B4E /* KRImageLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRImageLabelView.m; sourceTree = "<group>"; };
@@ -102,6 +156,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC79713C1AF1E3090073F077 /* KRKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA8622E1B10150F00BD22DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA8625E1B10186300BD22DA /* KRKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA862491B10150F00BD22DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +197,8 @@
 			children = (
 				BC7971321AF1E3090073F077 /* KRKit */,
 				BC79713F1AF1E3090073F077 /* KRKitTests */,
+				BCA862321B10150F00BD22DA /* KRKitDemo */,
+				BCA8624F1B10150F00BD22DA /* KRKitDemoTests */,
 				BC7971311AF1E3090073F077 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,6 +208,8 @@
 			children = (
 				BC7971301AF1E3090073F077 /* KRKit.framework */,
 				BC79713B1AF1E3090073F077 /* KRKitTests.xctest */,
+				BCA862311B10150F00BD22DA /* KRKitDemo.app */,
+				BCA8624C1B10150F00BD22DA /* KRKitDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +291,50 @@
 				BC7972081AF220630073F077 /* NSMutableAttributedString+KRKit.m */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		BCA862321B10150F00BD22DA /* KRKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BCA862371B10150F00BD22DA /* AppDelegate.h */,
+				BCA862381B10150F00BD22DA /* AppDelegate.m */,
+				BCA8623A1B10150F00BD22DA /* FirstViewController.h */,
+				BCA8623B1B10150F00BD22DA /* FirstViewController.m */,
+				BCA8623D1B10150F00BD22DA /* SecondViewController.h */,
+				BCA8623E1B10150F00BD22DA /* SecondViewController.m */,
+				BCA862401B10150F00BD22DA /* Main.storyboard */,
+				BCA862431B10150F00BD22DA /* Images.xcassets */,
+				BCA862451B10150F00BD22DA /* LaunchScreen.xib */,
+				BCA8625A1B1015A900BD22DA /* KRKitDemo-prefix.pch */,
+				BCA862331B10150F00BD22DA /* Supporting Files */,
+			);
+			path = KRKitDemo;
+			sourceTree = "<group>";
+		};
+		BCA862331B10150F00BD22DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCA862341B10150F00BD22DA /* Info.plist */,
+				BCA862351B10150F00BD22DA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCA8624F1B10150F00BD22DA /* KRKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCA862521B10150F00BD22DA /* KRKitDemoTests.m */,
+				BCA862501B10150F00BD22DA /* Supporting Files */,
+			);
+			path = KRKitDemoTests;
+			sourceTree = "<group>";
+		};
+		BCA862501B10150F00BD22DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCA862511B10150F00BD22DA /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		BCC1592F1AFB51240084AC72 /* Macro */ = {
@@ -309,6 +426,43 @@
 			productReference = BC79713B1AF1E3090073F077 /* KRKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BCA862301B10150F00BD22DA /* KRKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA862581B10150F00BD22DA /* Build configuration list for PBXNativeTarget "KRKitDemo" */;
+			buildPhases = (
+				BCA8622D1B10150F00BD22DA /* Sources */,
+				BCA8622E1B10150F00BD22DA /* Frameworks */,
+				BCA8622F1B10150F00BD22DA /* Resources */,
+				BCA862631B10187C00BD22DA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCA862601B10186600BD22DA /* PBXTargetDependency */,
+			);
+			name = KRKitDemo;
+			productName = KRKitDemo;
+			productReference = BCA862311B10150F00BD22DA /* KRKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCA8624B1B10150F00BD22DA /* KRKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA862591B10150F00BD22DA /* Build configuration list for PBXNativeTarget "KRKitDemoTests" */;
+			buildPhases = (
+				BCA862481B10150F00BD22DA /* Sources */,
+				BCA862491B10150F00BD22DA /* Frameworks */,
+				BCA8624A1B10150F00BD22DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCA8624E1B10150F00BD22DA /* PBXTargetDependency */,
+			);
+			name = KRKitDemoTests;
+			productName = KRKitDemoTests;
+			productReference = BCA8624C1B10150F00BD22DA /* KRKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -324,6 +478,13 @@
 					BC79713A1AF1E3090073F077 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
+					BCA862301B10150F00BD22DA = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					BCA8624B1B10150F00BD22DA = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = BCA862301B10150F00BD22DA;
+					};
 				};
 			};
 			buildConfigurationList = BC79712A1AF1E3080073F077 /* Build configuration list for PBXProject "KRKit" */;
@@ -332,6 +493,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = BC7971261AF1E3080073F077;
 			productRefGroup = BC7971311AF1E3090073F077 /* Products */;
@@ -340,6 +502,8 @@
 			targets = (
 				BC79712F1AF1E3090073F077 /* KRKit */,
 				BC79713A1AF1E3090073F077 /* KRKitTests */,
+				BCA862301B10150F00BD22DA /* KRKitDemo */,
+				BCA8624B1B10150F00BD22DA /* KRKitDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +517,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BC7971391AF1E3090073F077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA8622F1B10150F00BD22DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA862421B10150F00BD22DA /* Main.storyboard in Resources */,
+				BCA862471B10150F00BD22DA /* LaunchScreen.xib in Resources */,
+				BCA862441B10150F00BD22DA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA8624A1B10150F00BD22DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,6 +573,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCA8622D1B10150F00BD22DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA8623F1B10150F00BD22DA /* SecondViewController.m in Sources */,
+				BCA862391B10150F00BD22DA /* AppDelegate.m in Sources */,
+				BCA8623C1B10150F00BD22DA /* FirstViewController.m in Sources */,
+				BCA862361B10150F00BD22DA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA862481B10150F00BD22DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA862531B10150F00BD22DA /* KRKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -400,7 +600,36 @@
 			target = BC79712F1AF1E3090073F077 /* KRKit */;
 			targetProxy = BC79713D1AF1E3090073F077 /* PBXContainerItemProxy */;
 		};
+		BCA8624E1B10150F00BD22DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA862301B10150F00BD22DA /* KRKitDemo */;
+			targetProxy = BCA8624D1B10150F00BD22DA /* PBXContainerItemProxy */;
+		};
+		BCA862601B10186600BD22DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC79712F1AF1E3090073F077 /* KRKit */;
+			targetProxy = BCA8625F1B10186600BD22DA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCA862401B10150F00BD22DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCA862411B10150F00BD22DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCA862451B10150F00BD22DA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCA862461B10150F00BD22DA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BC7971441AF1E3090073F077 /* Debug */ = {
@@ -553,6 +782,68 @@
 			};
 			name = Release;
 		};
+		BCA862541B10150F00BD22DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "${SRCROOT}/KRKitDemo/KRKitDemo-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KRKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCA862551B10150F00BD22DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "${SRCROOT}/KRKitDemo/KRKitDemo-prefix.pch";
+				INFOPLIST_FILE = KRKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCA862561B10150F00BD22DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KRKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRKitDemo.app/KRKitDemo";
+			};
+			name = Debug;
+		};
+		BCA862571B10150F00BD22DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KRKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRKitDemo.app/KRKitDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,6 +873,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BCA862581B10150F00BD22DA /* Build configuration list for PBXNativeTarget "KRKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA862541B10150F00BD22DA /* Debug */,
+				BCA862551B10150F00BD22DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCA862591B10150F00BD22DA /* Build configuration list for PBXNativeTarget "KRKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA862561B10150F00BD22DA /* Debug */,
+				BCA862571B10150F00BD22DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
