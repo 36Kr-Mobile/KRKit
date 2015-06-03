@@ -54,18 +54,6 @@
 
 @end
 
-/**************************************************************************************************
- 点击事件 Touch Event
- **************************************************************************************************/
-
-@interface UIView (KREvent) <UIGestureRecognizerDelegate>
-
-- (void)kr_whenTapped:(void(^)(void))block;
-- (void)kr_whenTouchedDown:(void(^)(void))block;
-- (void)kr_whenTouchedUp:(void(^)(void))block;
-
-@end
-
 @interface UIView (Debug)
 
 - (void)kr_markBorderWithRandomColor;
