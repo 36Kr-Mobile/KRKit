@@ -35,3 +35,9 @@
  */
 #define KRUserDocumentDirectoryPath ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject])
 #define KRUserCacheDirectoryPath ([NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject])
+
+#define KRAppVersion    ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"])
+#define KRAppBuildNumber    ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"])
+#define KRAppIdentifier ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"])
+#define KRAppDisplayName    ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"])
+#define KRAppBundleName     ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"])
